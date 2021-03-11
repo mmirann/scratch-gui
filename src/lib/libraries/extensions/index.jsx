@@ -46,6 +46,11 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import edubotIconURL from './edubot/edubot.png';
+import edubotInsetIconURL from './edubot/edubot-small.svg';
+import edubotConnectionIconURL from './edubot/edubot-illustration.svg';
+import edubotConnectionSmallIconURL from './edubot/edubot-small.svg';
+
 export default [
     {
         name: (
@@ -317,5 +322,35 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'OROCA Edubot',
+        extensionId: 'edubot',
+        collaborator: 'OROCA',
+        iconURL: edubotIconURL,
+        insetIconURL: edubotInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Play with powerful small robot!"
+                description="Description for the 'OROCA_Edubot' extension"
+                id="gui.extension.edubot.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: edubotConnectionIconURL,
+        connectionSmallIconURL: edubotConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their edubot."
+                id="gui.extension.edubot.connectingMessage"
+            />
+        ),
+        helpLink: 'https://github.com/oroca/OROCA-EduBot'
     }
 ];
