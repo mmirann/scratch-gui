@@ -50,6 +50,11 @@ import edubotIconURL from "./edubot/edubot.png";
 import edubotInsetIconURL from "./edubot/edubot-small.svg";
 import edubotConnectionIconURL from "./edubot/edubot-illustration.svg";
 import edubotConnectionSmallIconURL from "./edubot/edubot-small.svg";
+s;
+import jikkoIconURL from "./jikko/jikko.png";
+import jikkoInsetIconURL from "./jikko/jikko-small.svg";
+import jikkoConnectionIconURL from "./jikko/jikko-illustration.svg";
+import jikkoConnectionSmallIconURL from "./jikko/jikko-small.svg";
 
 export default [
     {
@@ -352,5 +357,35 @@ export default [
             />
         ),
         helpLink: "https://github.com/oroca/OROCA-EduBot",
+    },
+    {
+        name: "MAKEITALL jikko",
+        extensionId: "jikko",
+        collaborator: "MAKEITALL",
+        iconURL: jikkoIconURL,
+        insetIconURL: jikkoInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Hello jikko world!"
+                description="Description for the 'MAKEITALL_jikko' extension"
+                id="gui.extension.jikko.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: jikkoConnectionIconURL,
+        connectionSmallIconURL: jikkoConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their jikko."
+                id="gui.extension.jikko.connectingMessage"
+            />
+        ),
+        helpLink: "",
     },
 ];
