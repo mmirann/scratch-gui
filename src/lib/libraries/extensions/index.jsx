@@ -50,7 +50,7 @@ import edubotIconURL from "./edubot/edubot.png";
 import edubotInsetIconURL from "./edubot/edubot-small.svg";
 import edubotConnectionIconURL from "./edubot/edubot-illustration.svg";
 import edubotConnectionSmallIconURL from "./edubot/edubot-small.svg";
-s;
+
 import jikkoIconURL from "./jikko/jikko.png";
 import jikkoInsetIconURL from "./jikko/jikko-small.svg";
 import jikkoConnectionIconURL from "./jikko/jikko-illustration.svg";
